@@ -1,0 +1,673 @@
+/* Styling for the division */
+body {
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+.division {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    /* background-color: rgb(255, 252, 233); */
+    height: 12px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.ministry-of-defence {
+    margin-right: auto;
+}
+.center-placeholder {
+    flex-grow: 1;
+}
+.mode-toggle {
+    cursor: pointer;
+}
+
+
+.mode-toggle img{
+    width: 40px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+.font-controls {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px; /* Add margin for separation */
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+
+
+
+
+
+/* 2nd Division */
+ /* Styling for the first division */
+ .first-division {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styling for the NCC section */
+.ncc-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the NCC logo */
+.ncc-logo img {
+    width: 80px;
+}
+
+/* Styling for the text */
+.ncc-text {
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* Styling for the Hindi text */
+.hindi-text {
+    font-size: 20px;
+}
+
+/* Styling for the English text */
+.english-text {
+    font-size: 30px;
+}
+
+/* Styling for the right logos */
+.right-logos {
+    display: flex;
+    gap: 40px;
+}
+
+/* Styling for the right logo of NCC */
+.right-logo img{
+    width: 100px;
+}
+
+.nav-toggle {
+    font-size: 40px; /* Make the hamburger icon bigger */
+    color: #000000; /* Change the color to dark */
+    display: none; /* Hide by default */
+}
+
+/* Hide right logos and show hamburger icon on mobile view */
+@media only screen and (max-width: 600px) {
+    .right-logos {
+        display: none;
+    }
+    .ncc-section {
+        justify-content: right;
+    }
+    .ncc-text {
+        margin-left: 20px;
+       
+    }
+    .nav-toggle {
+        
+        display: block; /* Show in mobile view */
+        margin-left: 55px;/* Push to the right side */
+    }
+}
+
+
+
+
+
+
+
+
+/* Styling for the third division */
+.division3 {
+    display: none;
+    background-color: rgb(28, 99, 0);
+    padding: 10px;
+}
+
+/* Show third division and hide hamburger icon on desktop view */
+@media only screen and (min-width: 601px) {
+    .division3 {
+        display: block;
+    }
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* Styling for the third division navigation bar */
+.division3 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.division3 nav ul li {
+    position: relative;
+    display: block;
+    flex-grow: 0;
+}
+
+.division3 nav ul li a {
+    display: block;
+    padding: 14px;
+    font-size:auto;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.division3 nav ul li:hover {
+    background-color: #ff850b;
+    cursor: pointer;
+}
+
+.division3 nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.division3 nav ul li.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.division3 nav ul li.dropdown .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.division3 nav ul li.dropdown .dropdown-content a:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.division3 nav ul li.right-dash {
+    margin-left: auto;
+}
+
+/* Styling for active class */
+.active {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .division3 nav ul {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* 4th Division - Photo Slider Styles */
+
+.photo-slider {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.slides {
+    display: flex;
+    width: 500%; /* Set width to accommodate all slides */
+    transition: transform 2s ease; /* Smooth transition effect */
+}
+
+.slides img {
+    width: 100vw; /* Set width of each slide to 100% of viewport width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Dynamically adjust height for mobile view */
+@media screen and (max-width: 768px) {
+    .photo-slider {
+        height: 25vh; /* Adjust height as needed */
+    }
+}
+
+
+
+
+
+/* Styles for the 5th Division */
+
+  .updates-container {
+    /* margin-top: 0; */
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    background-color: #189bff;
+    color: white;
+    font-size: 20px;
+  }
+  .fixed-part {
+    flex-basis: 30%;
+    padding: 10px;
+    background-color: #2175ec;
+    text-align: center;
+  }
+  .dynamic-part {
+    flex-basis: 70%;
+    overflow: hidden;
+    position: relative;
+  }
+  .update {
+    position: absolute;
+    white-space: nowrap;
+    right: 100%;
+    margin-top: 8px;
+    animation: slide-in 15s linear infinite;
+  }
+  @keyframes slide-in {
+    0%, 25% { left: 100%; }
+    30%, 55% { left: 3%; }
+    60%, 100% { left: -100%; }
+  }
+  @media (max-width: 768px) {
+    .fixed-part, .dynamic-part {
+      width: 100%;
+    }
+    .fixed-part {
+      background-color: #ADD8E6;
+    }
+    .dynamic-part {
+      margin-top: 10px;
+    }
+    .update {
+      animation: slide-in-mobile 15s linear infinite;
+    }
+    @keyframes slide-in-mobile {
+      0%, 25% { right: 100%; }
+      30%, 55% { right: 0%; }
+      60%, 100% { right: -100%; }
+    }
+  }
+
+
+
+
+
+
+
+
+/* Styles for the 6th Division */
+body {
+    /* margin: 0; */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  .ncc-division {
+    display: flex;
+    flex-wrap: wrap; /* Allows division content to wrap on smaller screens */
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  .left-content, .right-content {
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    padding: 20px;
+    width: 50%;
+  }
+  .sub-division {
+    margin-bottom: 20px;
+  }
+  .right-content {
+    background-color: #0000FF;
+    color: white;
+  }
+  .dg-ncc-header {
+    margin-bottom: 20px;
+  }
+  .dg-ncc-body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .dg-ncc-photo {
+    height: auto;
+    width: 180px;
+    margin-right: 20px;
+  }
+  .dg-ncc-content, .aim-ncc-content {
+    flex-grow: 1;
+  }
+  .read-more-button {
+    padding: 5px 10px;
+    background-color: #ADD8E6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  /* Responsive design for mobile view */
+  @media (max-width: 768px) {
+    .ncc-division {
+      flex-direction: column;
+    }
+    .left-content, .right-content {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .dg-ncc-body {
+      flex-direction: column;
+      align-items: center;
+    }
+    .dg-ncc-photo {
+      margin-bottom: 20px;
+    }
+    .dg-ncc-content{
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+/* Styles for Division 7 */
+
+
+.division7 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 2px; /* Added 2px padding on the right and left sides */
+    text-align: center;
+  }
+  
+  .division7 h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Added gap between the sections */
+    margin: 40px;
+  }
+
+  .section {
+    flex: 1;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .dir{
+    background-color: rgb(169, 255, 175);
+    text-align: center;
+    width: 100%;
+  }
+
+  .section p {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* Styles for mobile view */
+    .sections {
+      flex-direction: column; /* Display sections in a column */
+    }
+
+    .section {
+      margin: 0; /* Remove margin between sections */
+    }
+  }
+
+
+
+
+  /* Styles for the 8th Division */
+  /* body {
+    margin: 0;
+    padding: 0;
+} */
+
+.division8 {
+    margin: 20px; /* Margin from all sides */
+    padding: 10px;
+}
+
+.division8-heading {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.division8-sections-container {
+    display: flex;
+    justify-content: space-between; /* Add space between sections */
+    flex-wrap: wrap; /* Ensure flex items wrap to new line in mobile view */
+}
+
+.division8-section {
+    border: 2px solid black; /* Add border around each section */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px;
+    text-align: center;
+    width: 30%; /* Set width for laptop view */
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+.division8-section-heading {
+    font-weight: bold; /* Make heading bold */
+    border-bottom: 2px solid black; /* Add border under section heading */
+    padding-bottom: 5px; /* Add padding below section heading */
+    margin-bottom: 10px; /* Add space below section heading */
+}
+
+.division8-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.division8-section ul li {
+    text-align: center;
+    cursor: pointer; /* Add pointer cursor for clickable items */
+    margin-bottom: 5px; /* Add space between list items */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .division8-heading {
+        text-align: left;
+        font-weight: bold;
+    }
+    .division8-section {
+        width: 100%; /* Set width to full for mobile view */
+    }
+}
+
+
+
+
+/* Styles for the 9th Division */
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+
+.division9 {
+    width: 100%; /* Set width to full */
+    background-color: rgb(38, 38, 79); /* Background color */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 80px;
+}
+
+.heading {
+    text-align: center;
+    color: white; /* Text color */
+    font-size: 28px; /* Font size */
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around; /* Space between sections */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+.box {
+    width: 400PX;/* Set width for laptop view */
+    height: 350px;
+    margin-top: 20px; /* Add margin top */
+    background-color: white; /* Box background color */
+    border: 2px solid black; /* Border */
+    text-align: center;
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.box:hover {
+    transform: translateY(-15px); /* Move box up on hover */
+}
+
+
+.box  img{
+  width: 350px;
+  margin-bottom:8px;
+  margin-top: 17px;
+}
+
+.box p {
+    margin: 10px 0; /* Add margin */
+    font-weight: bold; /* Bold text */
+    font-size: 25px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Set width to full for mobile */
+        
+    }
+}
+
+
+
+
+
+
+/* 10th Division */
+  /* Body styling */
+  body {
+    /* margin: 0; */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  /* Container for the circles and labels */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  /* Styling for the circles */
+  .circle {
+    width: 150px; /* Increased size of the circle */
+    height: 150px; /* Increased size of the circle */
+    border-radius: 50%; /* Makes the div a circle */
+    background-color: #ADD8E6; /* Circle color */
+    text-align: center;
+    line-height: 120px; /* Centers the text vertically */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+  .circle img{
+    /* align-items: center; */
+    margin: 20px;
+  }
+  /* Hover effect for circles */
+  .circle:hover {
+    transform: scale(1.1); /* Makes the circle 'pop' */
+  }
+  /* Styling for the labels */
+  .label {
+    text-align: center;
+    margin-top: 10px; /* Space between circle and label */
+    color: rgb(0, 0, 0);
+  }
+  /* Media query for responsiveness on mobile devices */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .circle {
+      margin-bottom: 20px; /* Space between stacked circles */
+      margin-top: 10px;
+    }
+  }
+
+
+
+
+
+
+
+  /* 11th Division Styles */
+.division11 {
+    background-color: #d3d3d3; /* Grey background */
+    padding: 10px;
+}
+
+.division11 .footer-links {
+    text-align: center;
+}
+
+.division11 .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.division11 .footer-links a:hover {
+    color: #fff; /* White text on hover */
+}
+
+/* 12th Division Styles */
+.division12 {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+}
+
+.division12 .logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.division12 .logos img {
+    margin: 0 10px;
+}

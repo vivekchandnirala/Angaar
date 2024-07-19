@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet"
+        type="text/css"
+        href="/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Add Enrolment</h1>
+        
+        <form id="registrationForm" action="/submit" method="POST">
+          <!-- Personal Details Section -->
+          <div class="row">
+            <div class="column">
+              <h2>Personal Details</h2>
+              <div class="personal-details-grid">
+                <div class="input-group">
+                  <label for="firstName">First Name<span class="required">*</span>:</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="input-group">
+                  <label for="middleName">Middle Name:</label>
+                  <input type="text" id="middleName" name="middleName">
+                </div>
+                <div class="input-group">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="input-group">
+                  <label for="gender">Gender<span class="required">*</span>:</label>
+                  <select id="gender" name="gender">
+                      <option value="gender">gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="reg">Registration Number<span class="required">*</span>:</label>
+                  <input type="text" id="reg" name="reg" required>
+                </div>
+                <div class="input-group">
+                  <label for="dob">Date of Birth<span class="required">*</span>:</label>
+                  <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="input-group">
+                  <label for="mobile">Mobile Number<span class="required">*</span>:</label>
+                  <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="input-group">
+                  <label for="email">Email Address<span class="required">*</span>:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+      
+                <div class="input-group">
+                  <label for="fatherName">Father's Name<span class="required">*</span>:</label>
+              <input type="text" id="fatherName" name="fatherName" required>
+                </div>
+                <div class="input-group">
+                  <label for="motherName">Mother's Name<span class="required">*</span>:</label>
+              <input type="text" id="motherName" name="motherName" required>
+                </div>
+                <div class="input-group">
+                  <label for="nationality">Nationality<span class="required">*</span>:</label>
+              <input type="text" id="nationality" name="nationality" required>
+                </div>
+                <div class="input-group">
+                  <label for="Category">Category<span class="required">*</span>:</label>
+                  <select id="Category" name="Category">
+                    <option value="cat">Category</option>
+                    <option value="Genral">Genral</option>
+                    <option value="OBC">OBC</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="identificationMark">Identification Mark<span class="required">*</span>:</label>
+              <input type="text" id="identificationMark" name="identificationMark">
+                </div>
+      
+                <div class="input-group">
+                  <label for="bloodGroup">Blood Group:</label>
+                  <select id="bloodGroup" name="bloodGroup">
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                <!-- Add other personal details fields here -->
+              </div>
+            </div>
+          </div>   
+
+          
+
+          <button type="submit">Save</button>
+        
+        </form>
+</div>
+
+
+</body>
+</html>

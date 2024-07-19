@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e55d87b16d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 1st Division -->
+<div class="division1">
+  <!-- Left side of the division -->
+  <div class="left" style="margin-top: 5px;"><b>LPU-NCC</b>
+  </div>
+  <!-- Right side of the division -->
+  <div class="right">
+      <!-- Social media icons -->
+      <img src="LOGO's of 1st and 2nd DIV/icons8-expand-50.png" alt="Social Media Icons">
+      <!-- Font size buttons -->
+      <button id="increase-font"><img src="LOGO's of 1st and 2nd DIV/icons8-add-new-50.png" alt=""></button>
+      <button id="decrease-font"><img src="LOGO's of 1st and 2nd DIV/icons8-minus-24.png" alt=""></button>
+      <button id="reset-font"><img src="LOGO's of 1st and 2nd DIV/icons8-a-50 (1).png" alt=""></button>
+  </div>
+</div>
+
+
+<!-- 2nd Division NCC written Hindi and English -->
+<div class="first-division">
+<div class="ncc-section">
+  <div class="ncc-logo">
+      <img src="LOGO's of 1st and 2nd DIV/NCC LOGO.png" alt="NCC Logo">
+  </div>
+  <div class="ncc-text">
+      <div class="hindi-text">राष्ट्रीय कैडेट कोर</div>
+      <div class="english-text">National Cadet Corps</div>
+  </div>
+  <span class="nav-toggle" id="nav-toggle">☰</span> <!-- Hamburger icon -->
+</div>
+<div class="right-logos">
+  
+      <img src="LOGO's of 1st and 2nd DIV/Untitled design.png" alt="NCC Logo" width="220px">
+  
+  
+      <img src="LOGO's of 1st and 2nd DIV/seal.svg" alt="University Logo">
+  
+</div>
+</div>
+
+<!-- 3rd Division Navigation Bar -->
+<div class="division3" id="division3">
+<nav>
+  <ul id="nav-menu">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+          <a href="#">About NCC</a>
+          <div class="dropdown-content">
+              <a href="../Aim of NCC/aimOfNCC.html" >Aim of NCC</a>
+              <a href="../Aim of NCC/coreValues.html">Core Values</a>
+              <a href="../Aim of NCC/nccFlag.html">NCC Flag</a>
+              <a href="../NCC SONG/nccSong.html">NCC Song</a>
+          </div>
+      </li>
+      <li class="dropdown">
+          <a href="#">Units Corner</a>
+          <div class="dropdown-content">
+              <a href="#">NCC Act</a>
+              <a href="#">NCC Rules</a>
+              <a href="#">Policies and Guidelines</a>
+          </div>
+      </li>
+      <li><a href="../NccRankPage/alumni.html">Alumni</a></li>
+      <li><a href="../index.ejs">NCC Enrolment</a></li>
+      <li class="dropdown">
+          <a href="#">INSTITUTIONAL CORNER</a>
+          <div class="dropdown-content">
+              <a href="#">Enrolment Procedure</a>
+              <a href="../HAND BOOK SD SW Special Subject Army  Final 15 Oct.pdf" target="_blank">HandBook</a>
+              <a href="../NccRankPage/Rank.html">Rank</a>
+          </div>
+      </li>
+      <li class="right-dash">
+          <a href="https://ums.lpu.in/lpuums/LoginNew.aspx" target="_blank"><img src="LOGO's of 1st and 2nd DIV/icons8-home-24.png" alt="Dashboard Logo">   Dashboard</a>
+      </li>
+  </ul>
+</nav>
+</div>
+
+
+
+
+
+<!-- 4th Division -->
+<div class="division4">
+  <!-- Dynamic path display -->
+  <div class="path" id="path">Path: Home > Activity Gallery</div>
+  <!-- Social media icons -->
+  <div class="right">
+      <a href="https://www.instagram.com/lpuncc23_official/" target="_blank"><img src="LOGO's of 1st and 2nd DIV/instagram.png" alt="Instagram Logo"></a>
+      <a href="https://www.youtube.com/@LPUNCC" target="_blank"><img src="LOGO's of 1st and 2nd DIV/youtube.png" alt="YouTube Logo"></a>
+  </div>
+</div>
+
+<!-- Page Title -->
+<section id="gallery">
+    <header class="container-fluid container-padding light-section">
+        <h3 class="section-heading mt-4 mb-0">Discover the beauty of LPU-NCC</h3>
+        <p class="text-center mt-4 mb-0">Embark on a journey through the vibrant tapestry of camaraderie and adventure within LPU-NCC's captivating photo gallery.</p>
+        <hr class="mt-2" />
+    </header>
+</section>
+
+   <!-- Gallery skeleton from https://startbootstrap.com/snippets/thumbnail-gallery/ -->
+     <div class="container-fluid light-section">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/1.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/1.jpg"
+                alt="bangles stacked"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/2.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/2.jpg"
+                alt="small brooch"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/3.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/3.jpg"
+                alt="silver cuff"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/4.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/4.jpg"
+                alt="turquoise cuff"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/5.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/5.jpg"
+                alt="hand jewelry display"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/6.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/6.jpg"
+                alt="green ring"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/7.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/7.jpg"
+                alt="hat turquoise"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/8.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/8.jpg"
+                alt="small hoops"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/9.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/9.jpg"
+                alt="silver ear stretchers"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/10.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/10.jpg"
+                alt="blue ring"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/11.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/11.jpg"
+                alt="multiple silver rings"
+              />
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <a
+              href="Activity Gallery/12.jpg"
+              class="d-block mb-4 h-100"
+              data-fancybox="gallery"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="Activity Gallery/12.jpg"
+                alt="woman wearing jewelry"
+              />
+            </a>
+          </div>
+
+
+
+        </div>
+    </div>
+<!-- Footer -->
+<div class="division6">
+    <div class="footer-links">
+        <a href="#">Feedback</a>
+        <a href="#">Website Policies</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Help</a>
+        <a href="#">Web Information Manager</a>
+    </div>
+</div>
+
+<div class="division7">
+    <p>Content Owned by NCC</p>
+    <p>Developed and hosted by Vivek Chand Nirala</p>
+    <p>All rights reserved Copyrights 2024.</p>
+</div>
+
+<!-- jQuery Slim, Popper.js, Bootstrap JS, FancyBox -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-rI3DBwFs03DhFJvs9CIXQh0veu2/klI3vWzI1zR1nXz+x3FY7RmtAYLnAuFn1UIg" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
